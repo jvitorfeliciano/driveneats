@@ -43,7 +43,7 @@ body {
 
 }
 
-.selecionarPedido span{
+.main{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -280,6 +280,18 @@ h1 {
     width: 88%;
     height: 61px;
  }
+ .fecharPedido{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size:20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 193px;
+}
  .escondido {
     display:none;
  }

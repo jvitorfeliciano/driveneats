@@ -33,8 +33,11 @@ function pratoEscolhido(prato){
    
    const finalizado = document.querySelector('.selecionarPedido')
    finalizado.classList.add('background_selecionado')
-   const texto = document.querySelector('span');
+   const texto = document.querySelector('.main');
+   texto.classList.add('fecharPedido')
    texto.innerHTML = 'Fechar pedido'
+
+
    
 }
  
@@ -64,8 +67,9 @@ function bebidaEscolhida(bebida){
       
       const finalizado = document.querySelector('.selecionarPedido')
       finalizado.classList.add('background_selecionado')
-      const texto = document.querySelector('span');
-       texto.innerHTML = 'Fechar pedido'
+      const texto = document.querySelector('.main');
+      texto.classList.add('fecharPedido')
+      texto.innerHTML = 'Fechar pedido'
      
    }
 }
@@ -95,7 +99,8 @@ if ( pratoPrincipal + bebidaPrincipal + sobremesaPrincipal === 3) {
   
    const finalizado = document.querySelector('.selecionarPedido')
    finalizado.classList.add('background_selecionado')
-   const texto = document.querySelector('span');
+   const texto = document.querySelector('.main');
+   texto.classList.add('fecharPedido')
    texto.innerHTML = 'Fechar pedido'
     
   }
