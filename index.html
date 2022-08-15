@@ -4,9 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="topo">
+        <h1>Driveneats</h1>
+        <h2>Sua comida em 6 minutos</h2>        
+    </div>
+    <div class="bottom">
+        <div class="selecionarPedido" onclick="finalizarPedido()">
+            <div class="texto">
+                <span >Selecione os 3 itens para fechar o pedido</span>
+            </div>
+        </div>
+    </div>
+    <div class=container>
+        <div class="comanda">
+            <h3>Primeiro, seu prato</h3>
+        </div>
+        <div class="cardápio_prato_principal">
+            <div class="prato" onclick="pratoEscolhido(this)">
+                <img src="./imagens/strogonoff.jpg" alt="">
+                <h2>Strogonoff</h2>
+                <p>Arroz, batata palha e strogonoff</p>
+                <h4>R$ <span >46,50</span></h4>
+                <ion-icon  class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="prato" onclick="pratoEscolhido(this)">
+                <img src="./imagens/filépeixe.jpg" alt="">
+                <h2>Filé de Peixe</h2>
+                <p>Filé de peixe grelhado com legumes</p>
+                <h4>R$ <span >60,00</span></h4>
+                <ion-icon  class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="prato" onclick="pratoEscolhido(this)">
+                <img src="./imagens/costela.jpg" alt="">
+                <h2>Costelinha</h2>
+                <p>Costelinha com molho barbecue e purê</p>
+                <h4>R$ <span >53,60</span></h4>
+                <ion-icon  class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="prato" onclick="pratoEscolhido(this)">
+                <img src="./imagens/macarrão.jpg" alt="">
+                <h2>Macarronada</h2>
+                <p>Macarrão com molho de tomate</p>
+                <h4>R$ <span >35,00</span></h4>
+                <ion-icon  class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+        </div>
+        <div class="comanda">
+            <h3>Agora, sua bebida</h3>
+        </div>
+        <div class="cardápio_bebidas">
+            <div class="bebidas" onclick="bebidaEscolhida(this)">
+                <img src="./imagens/laranja.jpg" alt="">
+                <h2>Suco de Laranja</h2>
+                <p>500 ml</p>
+                <h4>R$ <span >10,00</span></h4>
+                <ion-icon  class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="bebidas" onclick="bebidaEscolhida(this)">
+                <img src="./imagens/limonada.jpg" alt="">
+                <h2>Suco de Limão</h2>
+                <p>500 ml </p>
+                <h4>R$ <span >10,00</span></h4>
+                <ion-icon  class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="bebidas " onclick="bebidaEscolhida(this)">
+                <img src="./imagens/vinho.jpg" alt="">
+                <h2>Vinho Tinto</h2>
+                <p> Vino Rosso d'Italia </p>
+                <h4>R$ <span >89,90</span></h4>
+                <ion-icon  class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="bebidas" onclick="bebidaEscolhida(this)">
+                <img src="./imagens/coca.jpg" alt="">
+                <h2>Coca-cola</h2>
+                <p>500 ml </p>
+                <h4>R$ <span >6,90</span></h4>
+                <ion-icon  class="escondido" name="checkmark-circle"></ion-icon>
+            </div>  
+        </div>
+        <div class="comanda">
+            <h3>Agora, sua sobremesa</h3>
+        </div>
+        <div class="cardápio_sobremesas">
+            <div class="sobremesas" onclick="sobremesaSelecionada(this)">
+                <img src="./imagens/tortam.jpg" alt="">
+                <h2>Torta de Creme</h2>
+                <p>Calda de morango</p>
+                <h4>R$ <span >7,00</span></h4>
+                <ion-icon  class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="sobremesas" onclick="sobremesaSelecionada(this)">
+                <img src="./imagens/bolocho.jpg" alt="">
+                <h2>Bolo de Chocolate</h2>
+                <p>Sabor que vicia </p>
+                <h4>R$ <span >9,00</span></h4>
+                <ion-icon  class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="sobremesas" onclick="sobremesaSelecionada(this)">
+                <img src="./imagens/srovete.jpg" alt="">
+                <h2>Sorvete de Chocolate</h2>
+                <p>Sorvete da alegria</p>
+                <h4>R$ <span >16,00</span></h4>
+                <ion-icon  class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+            <div class="sobremesas" onclick="sobremesaSelecionada(this)">
+                <img src="./imagens/mousse.jpg" alt="">
+                <h2>Mousse de Maracujá</h2>
+                <p>Delicioso e relaxante</p>
+                <h4>R$ <span >15,20</span></h4>
+                <ion-icon  class="escondido" name="checkmark-circle"></ion-icon>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
