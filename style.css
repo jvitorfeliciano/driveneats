@@ -248,10 +248,26 @@ h1 {
 .sobremesa_selecionada{
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
 }
- ion-icon{
+ .prato ion-icon{
     position: absolute;
     right: 14px;
-    bottom:25px;
+    bottom:15px;
+    font-size: 20px;
+    color: #32B72F;
+ }
+
+ .bebidas ion-icon{
+    position: absolute;
+    right: 14px;
+    bottom:13px;
+    font-size: 20px;
+    color: #32B72F;
+ }
+
+ .sobremesas ion-icon{
+    position: absolute;
+    right: 14px;
+    bottom:9px;
     font-size: 20px;
     color: #32B72F;
  }

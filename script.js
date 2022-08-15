@@ -34,7 +34,7 @@ function pratoEscolhido(prato){
    const finalizado = document.querySelector('.selecionarPedido')
    finalizado.classList.add('background_selecionado')
    const texto = document.querySelector('span');
-   texto.innerHTML = '<span>Fechar pedido</span>'
+   texto.innerHTML = 'Fechar pedido'
    
 }
  
@@ -65,7 +65,7 @@ function bebidaEscolhida(bebida){
       const finalizado = document.querySelector('.selecionarPedido')
       finalizado.classList.add('background_selecionado')
       const texto = document.querySelector('span');
-       texto.innerHTML = '<span>Fechar pedido</span>'
+       texto.innerHTML = 'Fechar pedido'
      
    }
 }
@@ -96,7 +96,7 @@ if ( pratoPrincipal + bebidaPrincipal + sobremesaPrincipal === 3) {
    const finalizado = document.querySelector('.selecionarPedido')
    finalizado.classList.add('background_selecionado')
    const texto = document.querySelector('span');
-   texto.innerHTML = '<span>Fechar pedido</span>'
+   texto.innerHTML = 'Fechar pedido'
     
   }
   
